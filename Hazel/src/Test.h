@@ -1,5 +1,5 @@
 #pragma once
 
 namespace Hazel {
-	void Print();
+__declspec(dllexport) void Print();
 }
