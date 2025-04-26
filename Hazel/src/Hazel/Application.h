@@ -15,7 +15,7 @@ namespace Hazel {
      */
 
 	// The __declspec(dllexport) keyword is used to export the class from a DLL.
-	class HAZEL_API Application{
+	class HZ_API Application{
     public:
         // Constructor: Initializes the application.
         Application();
@@ -27,4 +27,11 @@ namespace Hazel {
         void Run();
     };
 
+	// CreateApplication function: This function is defined in the client code.
+	// It is used to create an instance of the Application class.
+	// The function is expected to return a pointer to an Application object.
+	// This function is not defined in this file, but it is declared here to allow
+	// the client code to implement it.
+        
+	Application* CreateApplication();
 }
