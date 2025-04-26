@@ -5,7 +5,7 @@
  */
 
 #pragma once
-
+#include "Core.h"
 
 namespace Hazel {
 
@@ -13,7 +13,9 @@ namespace Hazel {
      * The Application class represents the main application.
      * It provides methods to initialize, run, and clean up the application.
      */
-	class __declspec(dllexport) Application {
+
+	// The __declspec(dllexport) keyword is used to export the class from a DLL.
+	class HAZEL_API Application{
     public:
         // Constructor: Initializes the application.
         Application();
